@@ -12,23 +12,39 @@ import Footer from "../components/Footer.astro";
   <main>
     <Hero />
 
-    <Section label="About">
+    <Section label="Claude Code">
       <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
-        Ramadan, beautifully in your terminal
+        Works inside Claude Code, automatically
+      </h2>
+      <p class="text-base leading-[1.7] mb-4" style="color: var(--text-secondary);">
+        When you install <strong>ramadan-cal</strong>, it sets up a Claude Code skill for you. Just type <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">ramadan</code> in any Claude Code session to see your Ramadan 2026 dashboard — prayer times, calendar, and Eid countdown — without leaving your coding flow. No configuration needed. It just works.
+      </p>
+    </Section>
+
+    <Section label="Why">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
+        Ramadan, where developers already are
       </h2>
       <p class="text-base leading-[1.7]" style="color: var(--text-secondary);">
-        <strong>ramadan-cal</strong> is a lightweight CLI that shows prayer times, a
-        Hijri calendar, and daily Ramadan progress — all rendered with clean
-        formatting in your terminal. It also works as a Claude Code slash command.
+        Developers spend hours in the terminal and in Claude Code. <strong>ramadan-cal</strong> meets you there — a single command to see today's prayer times, the Ramadan 2026 Hijri calendar, and how many days remain until Eid. No browser tabs, no app switching. Just a quick reminder of your spiritual duties during the blessed month, right where you work.
+      </p>
+    </Section>
+
+    <Section label="Features">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
+        Everything at a glance
+      </h2>
+      <p class="text-base leading-[1.7]" style="color: var(--text-secondary);">
+        Fajr, Dhuhr, Asr, Maghrib, and Isha times for your location. A visual Hijri calendar tracking the days of Ramadan 1447. Suhoor and Iftar times. An Eid al-Fitr countdown you can update when the date is officially announced. All beautifully formatted — whether you run it from your terminal or as a Claude Code slash command.
       </p>
     </Section>
 
     <Section label="Installation">
       <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
-        Get started in seconds
+        One install, two ways to use it
       </h2>
       <p class="text-base leading-[1.7] mb-4" style="color: var(--text-secondary);">
-        Install globally via npm, then run <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">ramadan</code> from anywhere.
+        Install globally via npm. This gives you the <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">ramadan</code> CLI command and automatically sets up the Claude Code skill — so typing <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">ramadan</code> in Claude Code works immediately.
       </p>
       <div
         class="rounded-lg p-4 px-5 font-mono text-[13px]"
@@ -41,18 +57,9 @@ import Footer from "../components/Footer.astro";
 
     <Section label="Commands">
       <h2 class="text-2xl font-semibold tracking-tight mb-4" style="color: var(--text);">
-        Everything you need
+        Simple commands, everything you need
       </h2>
       <CommandsGrid />
-    </Section>
-
-    <Section label="Claude Code">
-      <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
-        Works inside Claude Code
-      </h2>
-      <p class="text-base leading-[1.7] mb-4" style="color: var(--text-secondary);">
-        Use <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">!ramadan</code> directly in Claude Code to see your Ramadan dashboard without leaving your coding session.
-      </p>
     </Section>
   </main>
   <Footer />
