@@ -1,3 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-size="48">🌙</text>
+  <!-- Terminal window -->
+  <rect x="4" y="8" width="56" height="48" rx="6" ry="6" fill="#1a1d28" stroke="#333849" stroke-width="2"/>
+  <!-- Terminal chrome bar -->
+  <rect x="4" y="8" width="56" height="12" rx="6" ry="6" fill="#161922"/>
+  <rect x="4" y="14" width="56" height="6" fill="#161922"/>
+  <!-- Terminal dots -->
+  <circle cx="14" cy="14" r="2.2" fill="#ff5f57"/>
+  <circle cx="21" cy="14" r="2.2" fill="#febc2e"/>
+  <circle cx="28" cy="14" r="2.2" fill="#28c840"/>
+  <!-- Crescent moon -->
+  <g transform="translate(-8, -1) rotate(-30 32 39)">
+    <path d="M40 26c-7.18 0-13 5.82-13 13s5.82 13 13 13a13 13 0 0 0 9.9-4.6 10.5 10.5 0 0 1-6.9 2.6c-5.8 0-10.5-4.7-10.5-10.5S37.2 29 43 29c2.5 0 4.8.9 6.6 2.3A13 13 0 0 0 40 26z" fill="#c9a84c"/>
+  </g>
 </svg>

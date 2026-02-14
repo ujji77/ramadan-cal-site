@@ -49,20 +49,20 @@
 /* Dark theme (default) */
 :root,
 [data-theme="dark"] {
-  --bg: #050505;
-  --bg-subtle: #0d0d0d;
-  --surface: #111111;
-  --surface-hover: #1a1a1a;
-  --border: #1e1e1e;
-  --border-bright: #2a2a2a;
+  --bg: #0f1117;
+  --bg-subtle: #161922;
+  --surface: #1a1d28;
+  --surface-hover: #222633;
+  --border: #262a38;
+  --border-bright: #333849;
   --text: #e8e8e8;
-  --text-secondary: #777;
-  --text-dim: #444;
+  --text-secondary: #8a8fa3;
+  --text-dim: #505568;
   --accent: #c9a84c;
   --accent-dim: #c9a84c22;
   --accent-glow: #c9a84c15;
-  --terminal-bg: #0a0a0a;
-  --terminal-chrome: #111;
+  --terminal-bg: #0c0e15;
+  --terminal-chrome: #161922;
   --green: #4ade80;
   --red: #f87171;
   --dot-red: #ff5f57;
