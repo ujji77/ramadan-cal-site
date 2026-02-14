@@ -24,7 +24,7 @@
       href="https://www.npmjs.com/package/ramadan-cal"
       target="_blank"
       rel="noopener noreferrer"
-      class="flex items-center justify-center w-9 h-9 rounded-lg transition-colors"
+      class="nav-icon flex items-center justify-center w-9 h-9 rounded-lg transition-colors"
       style="color: var(--text-secondary);"
       aria-label="npm"
     >
@@ -36,7 +36,7 @@
       href="https://github.com/ujji77/ramadan-cli"
       target="_blank"
       rel="noopener noreferrer"
-      class="flex items-center justify-center w-9 h-9 rounded-lg transition-colors"
+      class="nav-icon flex items-center justify-center w-9 h-9 rounded-lg transition-colors"
       style="color: var(--text-secondary);"
       aria-label="GitHub"
     >
@@ -48,7 +48,7 @@
     </a>
     <button
       id="theme-toggle"
-      class="flex items-center justify-center w-9 h-9 rounded-lg transition-colors cursor-pointer"
+      class="nav-icon flex items-center justify-center w-9 h-9 rounded-lg transition-colors cursor-pointer"
       style="color: var(--text-secondary);"
       aria-label="Toggle theme"
     >
@@ -96,3 +96,9 @@
     updateIcons();
   });
 </script>
+
+<style>
+  .nav-icon:hover {
+    color: var(--accent) !important;
+  }
+</style>
