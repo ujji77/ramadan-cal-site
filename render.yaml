@@ -1,0 +1,4 @@
+routes:
+  - type: rewrite
+    source: /_astro/**
+    destination: /_astro/**
