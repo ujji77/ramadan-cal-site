@@ -134,10 +134,10 @@ export default function Terminal() {
       {/* Terminal body */}
       <div
         ref={bodyRef}
-        className="p-5 font-mono text-[13px] leading-[1.7] overflow-y-auto max-sm:text-[11px] max-sm:p-3.5 max-sm:min-h-[320px]"
+        className="p-5 font-mono text-[13px] leading-[1.7] overflow-y-auto max-sm:text-[11px] max-sm:p-3.5 max-sm:h-[420px]"
         style={{
           background: "var(--terminal-bg)",
-          minHeight: 580,
+          height: 726,
           color: "#d4d4d4",
         }}
       >
