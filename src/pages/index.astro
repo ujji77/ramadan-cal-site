@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+import CommandsGrid from "../components/CommandsGrid.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <Navbar />
+  <main>
+    <Hero />
+
+    <Section label="About">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
+        Ramadan, beautifully in your terminal
+      </h2>
+      <p class="text-base leading-[1.7]" style="color: var(--text-secondary);">
+        <strong>ramadan-cal</strong> is a lightweight CLI that shows prayer times, a
+        Hijri calendar, and daily Ramadan progress — all rendered with clean
+        formatting in your terminal. It also works as a Claude Code slash command.
+      </p>
+    </Section>
+
+    <Section label="Installation">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
+        Get started in seconds
+      </h2>
+      <p class="text-base leading-[1.7] mb-4" style="color: var(--text-secondary);">
+        Install globally via npm, then run <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">ramadan</code> from anywhere.
+      </p>
+      <div
+        class="rounded-lg p-4 px-5 font-mono text-[13px]"
+        style="background: var(--terminal-bg); border: 1px solid #222; color: #d4d4d4;"
+      >
+        <div>$ npm install -g ramadan-cal</div>
+        <div>$ ramadan</div>
+      </div>
+    </Section>
+
+    <Section label="Commands">
+      <h2 class="text-2xl font-semibold tracking-tight mb-4" style="color: var(--text);">
+        Everything you need
+      </h2>
+      <CommandsGrid />
+    </Section>
+
+    <Section label="Claude Code">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
+        Works inside Claude Code
+      </h2>
+      <p class="text-base leading-[1.7] mb-4" style="color: var(--text-secondary);">
+        Use <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">!ramadan</code> directly in Claude Code to see your Ramadan dashboard without leaving your coding session.
+      </p>
+    </Section>
+  </main>
+  <Footer />
+</Layout>

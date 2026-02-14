@@ -1,0 +1,26 @@
+---
+const commands = [
+  { cmd: "ramadan", desc: "Full display — times, calendar, progress" },
+  { cmd: "ramadan times", desc: "Just prayer times" },
+  { cmd: "ramadan calendar", desc: "Just the calendar grid" },
+  { cmd: "ramadan eid 2026-03-19", desc: "Set Eid date when announced" },
+  { cmd: "ramadan reset", desc: "Clear config, start fresh" },
+  { cmd: "!ramadan", desc: "Run inside Claude Code" },
+];
+---
+
+<div class="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
+  {commands.map(({ cmd, desc }) => (
+    <div
+      class="rounded-lg p-3.5 px-4 transition-colors"
+      style={`background: var(--surface); border: 1px solid var(--border);`}
+    >
+      <code class="font-mono text-[13px] font-semibold block" style="color: var(--accent);">
+        {cmd}
+      </code>
+      <span class="text-[13px] mt-1 block" style="color: var(--text-dim);">
+        {desc}
+      </span>
+    </div>
+  ))}
+</div>

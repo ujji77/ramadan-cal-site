@@ -1,0 +1,41 @@
+---
+interface Props {
+  label: string;
+  id?: string;
+}
+
+const { label, id } = Astro.props;
+---
+
+<section
+  id={id}
+  class="section-fade max-w-[640px] mx-auto mb-16 px-6 opacity-0 translate-y-4 transition-all duration-700"
+  style="transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);"
+>
+  <span
+    class="block font-mono text-[11px] uppercase tracking-[0.1em] mb-4"
+    style="color: var(--accent);"
+  >
+    {label}
+  </span>
+  <slot />
+</section>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "translate-y-4");
+          entry.target.classList.add("opacity-100", "translate-y-0");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  document.querySelectorAll(".section-fade").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
