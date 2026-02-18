@@ -55,6 +55,39 @@ import Footer from "../components/Footer.astro";
       </div>
     </Section>
 
+    <Section label="Troubleshooting" id="troubleshooting">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3" style="color: var(--text);">
+        Claude Code skill not set up?
+      </h2>
+      <p class="text-base leading-[1.7] mb-6" style="color: var(--text-secondary);">
+        If the automatic setup didn't run during install, you can set it up manually in two steps.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-mono text-[11px] uppercase tracking-[0.1em] mb-3" style="color: var(--accent);">Step 1 — Download the skill file</p>
+        <p class="text-base leading-[1.7] mb-3" style="color: var(--text-secondary);">
+          Download <a href="/SKILL.md" download="SKILL.md" class="underline underline-offset-2" style="color: var(--accent);">SKILL.md</a> and place it at:
+        </p>
+        <div class="rounded-lg p-4 px-5 font-mono text-[13px]" style="background: var(--terminal-bg); border: 1px solid #222; color: #d4d4d4;">
+          ~/.claude/skills/ramadan/SKILL.md
+        </div>
+      </div>
+
+      <div>
+        <p class="font-mono text-[11px] uppercase tracking-[0.1em] mb-3" style="color: var(--accent);">Step 2 — Add to your CLAUDE.md</p>
+        <p class="text-base leading-[1.7] mb-3" style="color: var(--text-secondary);">
+          Add the following to <code class="font-mono text-[13px] px-1.5 py-0.5 rounded" style="background: var(--surface); color: var(--accent);">~/.claude/CLAUDE.md</code> (create it if it doesn't exist):
+        </p>
+        <div class="rounded-lg p-4 px-5 font-mono text-[13px] leading-relaxed" style="background: var(--terminal-bg); border: 1px solid #222; color: #d4d4d4;">
+          <div>&lt;!-- ramadan-cal --&gt;</div>
+          <div>## Ramadan CLI</div>
+          <div>When the user types "ramadan" or any command starting with "ramadan",</div>
+          <div>run it as a shell command using bash.</div>
+          <div>&lt;!-- ramadan-cal --&gt;</div>
+        </div>
+      </div>
+    </Section>
+
     <Section label="Commands">
       <h2 class="text-2xl font-semibold tracking-tight mb-4" style="color: var(--text);">
         Simple commands, everything you need
